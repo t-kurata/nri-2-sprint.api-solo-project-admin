@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>admin</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>ラーメンデータベース管理者ドライバー</h1>
+    <p>ラーメン情報取得（全件）</p>
+    <form action="/admin/get" method="GET">
+      <button type="submit">取得</button>
+    </form>
+    <p>ラーメン情報新規追加（名称が必須項目）</p>
+    <form action="/admin/post" method="POST">
+      <input type="text" name="ramen_name" placeholder="ramen_name">
+      <input type="text" name="category" placeholder="category">
+      <input type="text" name="price" placeholder="price">
+      <input type="text" name="image" placeholder="image">
+      <button type="submit">追加</button>
+    </form>
+    <p>ラーメン情報変更（名称を指定して任意の項目を変更）</p>
+    <form action="/admin/patch" method="POST">
+      <input type="text" name="ramen_name" placeholder="ramen_name">
+      <input type="text" name="category" placeholder="category">
+      <input type="text" name="price" placeholder="price">
+      <input type="text" name="image" placeholder="image">
+      <button type="submit">変更</button>
+    </form>
+    <p>ラーメン情報削除（名称を指定）</p>
+    <form action="/admin/delete" method="POST">
+      <input type="text" name="ramen_name" placeholder="ramen_name">
+      <button type="submit">削除</button>
+    </form>
+  </body>
+</html>

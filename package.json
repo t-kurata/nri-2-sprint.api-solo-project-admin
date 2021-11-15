@@ -1,0 +1,15 @@
+{
+  "name": "api-solo-project-admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.17",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
+  }
+}
